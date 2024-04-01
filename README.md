@@ -15,8 +15,8 @@ Identified the overlooked issue of evaluation inconsistency in time series forec
 
 We found an inconsistency in the evaluation of the current study. As shown in Figure 1, the green line represents the ground truth, while the red and blue lines represent two different prediction results. Solely based on regression metrics, the blue line outperforms the red line by far. However, if we divide the predicted values into 5 shaded intervals, each corresponding to a category, and evaluate from a classification perspective, the red line's classification prediction aligns perfectly with the ground truth, while the accuracy of the blue line is 0. A model that performs exceptionally well in regression tasks may not necessarily excel in classification tasks. Nevertheless, in many regression problems, classification evaluation is equally important, especially for disaster warnings such as for strong winds, high waves, and floods.
 
-| <img src="F:/ouc/KBS/%E5%9B%BE%E8%A1%A8/reg_class_compare_00.png" alt="img" style="zoom: 30%;" /> |
-| :----------------------------------------------------------: |
+|                                                                                                                                      <img src="../DeepWind/file/reg_class_compare_00.png" alt="img" style="zoom: 30%;" />                                                                                                                                      |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Figure 1: An extreme example to illustrate the evaluation inconsistency. Note that forecast 2 exhibits superior performance (MSE: 1.05, MAE: 0.94) compared to forecast 1 (MSE: 4.16, MAE: 1.96) on regression metrics. However, if wind speeds are categorized into 5 classes, forecast 1 achieves 100\% accuracy while forecast 2 dwindles to zero accuracy. |
 
 
@@ -37,13 +37,13 @@ wdir_{10m} = 270^{\circ}  -180^{\circ}*arctan2(V_{10m},U_{10m})/\pi
 spd_{10m} = \sqrt{U_{10m}^{2}   +V_{10m}^{2}}
 $$
 
-| <img src="F:/ouc/KBS/%E5%9B%BE%E8%A1%A8/wdir_00(1).png" alt="img" style="zoom: 25%;" /> |
-| :----------------------------------------------------------: |
-| Figure 2: Conversion relationship among $U$ component, $V$ component, wind speed, and wind direction. $wdir_{10m}$ represents the direction at 10 meters, $\theta$ represents the degree of wind direction; $spd_{10m}$ represents the wind speed at 10 meters, $U_{10m}$ and $V_{10m}$ represent the decomposed wind speeds, calculated via the equations in this figure. |
+|                                                                                                                                                          <img src="../DeepWind/file/wdir_00.png" alt="img" style="zoom: 25%;" />                                                                                                                                                           |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|         Figure 2: Conversion relationship among $U$ component, $V$ component, wind speed, and wind direction. $wdir_{10m}$ represents the direction at 10 meters, $\theta$ represents the degree of wind direction; $spd_{10m}$ represents the wind speed at 10 meters, $U_{10m}$ and $V_{10m}$ represent the decomposed wind speeds, calculated via the equations in this figure.         |
 
 ## Heterogeneous model architecture
 
-|    ![img](F:/ouc/KBS/%E5%9B%BE%E8%A1%A8/DeepWind_00.png)    |
+|    ![img](../DeepWind/file/DeepWind_00.png)    |
 | :---------------------------------------------------------: |
 | Figure 3: The entire architecture of the proposed DeepWind. |
 
@@ -73,7 +73,7 @@ $$
 
 ## Main results
 
-![image-20240130235032888](C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20240130235032888.png)
+![image-20240130235032888](../DeepWind/file/main_results.png)
 
 
 
