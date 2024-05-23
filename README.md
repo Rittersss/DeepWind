@@ -73,7 +73,7 @@ $$
 
 ## Main results
 
-![image-20240130235032888](../DeepWind/file/main_results.png)
+![image-20240130235032888](../DeepWind/file/mian_results.png)
 
 
 
@@ -113,7 +113,3 @@ If you have any questions or suggestions, feel free to contact:
 - Bin Wang (wangbin9545@ouc.edu.cn)
 
 or describe it in Issues.
-
-## Acknowledgement
-
-The authors thanked Kaihua Zhang for his enthusiastic discussions. This work was supported by the Fundamental Research Funds for the Central Universities (no. 202313038) and the National Natural Science Foundation of China (no. 62176243, no. 41976185).
